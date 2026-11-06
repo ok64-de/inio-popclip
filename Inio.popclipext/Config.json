@@ -1,0 +1,33 @@
+{
+  "name": "Inio",
+  "identifier": "com.fleg.inio.PopClipExtension",
+  "description": "Send the selected text to today's note in Inio, or add it as a todo.",
+  "icon": "symbol:square.and.pencil",
+  "popclipVersion": 4035,
+  "options": [
+    {
+      "identifier": "path",
+      "label": "CLI path",
+      "type": "string",
+      "description": "Where the inio command-line tool is. Leave this empty to look in /opt/homebrew/bin, /usr/local/bin and ~/.local/bin."
+    }
+  ],
+  "actions": [
+    {
+      "title": "Add to Today",
+      "identifier": "today",
+      "icon": "symbol:calendar.badge.plus",
+      "shellScriptFile": "capture.js",
+      "shellMode": "none",
+      "after": "show-status"
+    },
+    {
+      "title": "Add Todo",
+      "identifier": "todo",
+      "icon": "symbol:checklist",
+      "shellScriptFile": "capture.js",
+      "shellMode": "none",
+      "after": "show-status"
+    }
+  ]
+}
