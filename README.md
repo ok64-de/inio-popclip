@@ -1,6 +1,6 @@
 # Inio for PopClip
 
-Send selected text to [Inio](https://github.com/flegfleg/homebrew-inio) from the PopClip bar.
+Send selected text to [Inio](https://github.com/ok64-de/homebrew-inio) from the PopClip bar.
 
 | Action | Does |
 |---|---|
@@ -16,7 +16,7 @@ Each capture is one step in Inio's Edit ▸ Undo.
 - Inio's command-line tool, `inio`:
 
   ```sh
-  brew install --cask flegfleg/inio/inio-cli
+  brew install --cask ok64-de/inio/inio-cli
   ```
 
   If `inio` is not in `/opt/homebrew/bin`, `/usr/local/bin` or `~/.local/bin`, set **CLI path** in the extension's settings.
