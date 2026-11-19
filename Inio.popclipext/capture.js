@@ -36,9 +36,9 @@ function cliPath() {
 
 /** The capture for this action. A page's address lands as a link card after the text. */
 function captureArguments(action, text, pageURL) {
-  if (action === "todo") return ["capture", "--today", "--todo", "--text", text]
-  if (pageURL) return ["capture", "--today", "--blocks-json", JSON.stringify([{ text }, { url: pageURL }])]
-  return ["capture", "--today", "--text", text]
+  if (action === "todo") return ["capture", "today", "--todo", "--text", text]
+  if (pageURL) return ["capture", "today", "--blocks-json", JSON.stringify([{ text }, { url: pageURL }])]
+  return ["capture", "today", "--text", text]
 }
 
 function run() {

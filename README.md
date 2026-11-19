@@ -13,7 +13,7 @@ Each capture is one step in Inio's Edit ▸ Undo.
 
 - PopClip.
 - Inio, running.
-- Inio's command-line tool, `inio`:
+- Inio's command-line tool, `inio` 2.0 or later:
 
   ```sh
   brew install --cask ok64-de/inio/inio-cli
